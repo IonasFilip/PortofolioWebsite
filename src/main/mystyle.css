@@ -1,0 +1,162 @@
+:root{
+    --trueDarkGray: #3b3b3b;
+}
+
+.main {
+    background-image: url("Swirls4.jpg");
+    /*opacity: 0.5;*/
+    background-color: rgba(200,200,200,0.6);
+    background-blend-mode: lighten;
+
+    /*position: relative;*/
+    height: 95vh;
+    box-shadow: dimgrey 2px 2px 6px 6px;
+    z-index: 888;
+}
+
+
+
+.card-container {
+    display: flex;
+    gap: 10px; /* optional: adds space between cards */
+}
+
+.p_main {
+    background-image: url("Swirls4.jpg");
+    /*opacity: 0.5;*/
+    background-attachment: fixed;
+    /*background-repeat: repeat-y;*/
+    background-color: rgba(140,140,140,0.6);
+    background-blend-mode: darken;
+
+    /*position: relative;*/
+    /*height: fit-content;*/
+    min-height: calc(100% + 10vh);
+    box-shadow: dimgrey 2px 2px 6px 6px;
+    z-index: 888;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width:40vh;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+
+.fa {
+    padding-left: 10%;
+    font-size: calc(175px + 1vw);
+    font-family: "Droid Sans";
+    text-align: center;
+    text-decoration: none;
+    /*background-color: black;*/
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    color: black;
+}
+
+.fa-instagram {
+    color: black;
+}
+
+.links {
+    height: 20vh;
+    width: 80%;
+}
+
+.column {
+    float: left;
+
+    width: 50%;
+    height: 100%;
+}
+
+.column1 {
+    float: left;
+
+    width: 30%;
+    height: 100%;
+}
+.column3 {
+    float: left;
+
+    width: 70%;
+    height: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.swirls {
+    top: 10%;
+    bottom: 10%;
+    height: 60vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: aqua;
+}
+
+.centered_swirls {
+    position: relative;
+    top: 40%;
+    left: 60%;
+    /*right 60%;*/
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: fit-content;
+    /*min-height: 200%;*/
+    /*flex-wrap: wrap;*/
+    grid-gap: 0.25%;
+    /*padding: 5px;*/
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 0 21%; /* 5 items per row */
+    margin: 5px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: darkgray 1px 1px 2px 2px;
+}
+
+.gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    /*overflow: visible;*/
+}
+
+.swirls_div{position: relative; height: 80vh; filter: brightness(60%) ; background-image: linear-gradient(to right, black , var(--trueDarkGray) , black)}
